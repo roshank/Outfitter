@@ -2,7 +2,6 @@ body {
     background: white url("/images/bg_gradient.jpg") repeat-x;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 .center {
     width: 932px;
