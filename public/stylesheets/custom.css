@@ -18,6 +18,13 @@ body {
     position: relative;
     top: -41px;
 }
+
+.second_bg{
+    margin: 62px auto;
+    height: 838px;
+    position: relative;
+    top: -41px;	
+}
 .main_content {
     position: relative;
     top: -941px;
