@@ -1,17 +1,52 @@
 body {
-    background: white url("bg_gradient.jpg") repeat-x;
+    background: white url("/images/bg_gradient.jpg") repeat-x;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.center {
+    width: 932px;
+    margin: 0px auto;
 }
 .logo_row {
-    margin: 17px 0 0 10px;
+    margin: 20px 0 0 13px;
 }
-.main_row {
-    margin: 80px 0 0 0;
-}
-.thelink {
-    height: 102px;
-    width: 466px;
-    display: inline-block;
+.main_bg {
+    margin: 62px auto;
+    height: 838px;
+    background: transparent url("/images/main_background.png") no-repeat center;
     position: relative;
-    top: -179px;
-    left: 399px;
+    top: -41px;
 }
+.main_content {
+    position: relative;
+    top: -941px;
+}
+.main_text {
+    text-align: center;
+    margin-top: 100px;
+}
+.main_textbox {
+    background-image: url("/images/main_textbox.png");
+    width: 568px;
+    height: 90px;
+    margin-top: 30px;
+}
+#main_textbox {
+    width: 440px;
+    font-size: 28px;
+    padding: 10px 10px;
+    margin: 18px 0 0 16px;
+    border: none;
+    outline: none;
+    color: rgb(230,230,230);
+}
+.go {
+    height: 60px;
+    width: 76px;
+    display: block;
+    margin: -75px 0 0 480px;
+    z-index: 1000;
+    cursor: pointer;
+}
+

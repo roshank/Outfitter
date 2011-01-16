@@ -1,12 +1,22 @@
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
 
-  <p><%= f.label :email %><br />
-  <%= f.text_field :email %></p>
-  <%= f.hidden_field :password, :value=>'foobar' %></p>
-  <%= f.hidden_field :password_confirmation, :value=>'foobar' %></p>
 
-  <p><%= f.submit "Sign up" %></p>
-<% end %>
+<div class="logo_row"><img src="/images/logo.png"/></div>
+<div class="main_bg"></div>
+<div class="main_content center">
+    <div class="main_text">
+        <img src="/images/main_text.png"/>            
+    </div>
 
+    <div class="main_textbox center">     
+	
+	    <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+		  <%= devise_error_messages! %>
+
+		  <%= f.text_field :email, :id=>'main_textbox', :value=>'Enter your email to get started!', :onclick=>'init_textbox()' %></p>
+		  <%= f.hidden_field :password, :value=>'foobar' %></p>
+		  <%= f.hidden_field :password_confirmation, :value=>'foobar' %></p>
+	 	  <%= f.submit image_tag('/images/go.png'), :class=>'go',:type=>'image' %>
+		<% end %>
+    </div>
+</div>
 <%= render :partial => "devise/shared/links" %>
