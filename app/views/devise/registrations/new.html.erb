@@ -15,7 +15,7 @@
 		  <%= f.text_field :email, :id=>'main_textbox', :value=>'Enter your email to get started!', :onclick=>'init_textbox()' %></p>
 		  <%= f.hidden_field :password, :value=>'foobar' %></p>
 		  <%= f.hidden_field :password_confirmation, :value=>'foobar' %></p>
-	 	  <%= f.submit image_tag('/images/go.png'), :class=>'go',:type=>'image' %>
+	 	  <%= f.submit :src=>"/images/go.png", :class=>"go", :type=>"image" %>
 		<% end %>
     </div>
 </div>
